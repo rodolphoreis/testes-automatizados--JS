@@ -6,7 +6,7 @@ Este repositório contém testes para a busca de personagens Star Wars utilizand
 
 Antes de executar os testes, certifique-se de instalar as dependências necessárias utilizando o comando:
 
-```bash
+bash
 npm install
 
 # Testes
