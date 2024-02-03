@@ -16,9 +16,11 @@ describe("Suite de manipulação de Herois", () => {
     deepEqual(resultado, expected);
   });
 
-  /*  it("Deve cadastrar um heroi, usando arquivos", async () => {
+  it("Deve cadastrar um heroi, usando arquivos", async () => {
     const expected = DEFAULD_ITEM_CADASTRAR;
+    const resultado = await database.cadastrar(DEFAULD_ITEM_CADASTRAR);
+    const [actual] = await database.listar(DEFAULD_ITEM_CADASTRAR.id);
 
-    ok(null, expected);
-  }); */
+    deepEqual(actual, expected);
+  });
 });
